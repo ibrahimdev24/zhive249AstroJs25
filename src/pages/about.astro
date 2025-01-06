@@ -6,7 +6,7 @@ import ContributingAssets from '../components/ContributingAssets.astro';
 
 const stats = [
   { value: '50+', label: 'Years Combined Experience', icon: '🏆' },
-  { value: '100+', label: 'Projects Completed', icon: '🎯' },
+  { value: '150+', label: 'Projects Completed', icon: '🎯' },
   { value: '50+', label: 'Happy Clients', icon: '😊' }
 ];
 
@@ -16,7 +16,7 @@ const coreTeam = [
     name: 'Waad Khalid',
     role: 'Project Manager & Senior Researcher',
     bio: 'Meet our deadline ninja with the sweetest smile! 🌟 Waad keeps our projects running like clockwork with her perfect blend of charm and efficiency.',
-    image: '/team/waad-kh.jpeg',
+    image: '/optimized/waad-kh.webp',
     social: {
       email: 'waad.minalla@zhive249.com',
       linkedin: 'https://www.linkedin.com/in/waad-khalid-21495a242/'
@@ -26,7 +26,7 @@ const coreTeam = [
     name: 'Waad',
     role: 'Finance & HR Manager',
     bio: 'Need a new laptop or tool? Waad\'s your financial fairy godmother! 💫 As our master of budgets and keeper of resources.',
-    image: '/team/waad.jpeg',
+    image: '/optimized/waad.webp',
     social: {
       email: 'waad.ibrahim@zhive249.com'
     }
@@ -35,7 +35,7 @@ const coreTeam = [
     name: 'Shahd',
     role: 'Public Relations Director',
     bio: 'Our ray of sunshine and master of connections! With her infectious energy and quick wit, Shahd keeps our office buzzing with laughter.',
-    image: '/team/shahd.jpeg',
+    image: '/optimized/shahd.webp',
     social: {
       email: 'shahd.minalla@zhive249.com',
       instagram: 'https://www.instagram.com/shahdminalla'
@@ -45,9 +45,9 @@ const coreTeam = [
     name: 'Ibrahim',
     role: 'Technical Director',
     bio: 'The wizard behind the code who turned coffee into successful businesses! With a track record in export/import, wholesale, and web development.',
-    image: '/team/ibrahim.jpeg',
+    image: '/optimized/ibrahim.webp',
     social: {
-      email: 'ibrahim@zhive249.com',
+      email: 'ibrahim.mohamed@zhive249.com',
       linkedin: 'https://www.linkedin.com/in/ibrahimdevop21',
       github: 'https://www.github.com/ibrahimdevop21'
     }
@@ -56,16 +56,16 @@ const coreTeam = [
     name: 'Ahmed',
     role: 'Creative Director',
     bio: 'Our creative mastermind who brings ideas to life! Ahmed\'s designs are not just visually stunning but tell compelling stories.',
-    image: '/team/ahmed.jpeg',
+    image: '/optimized/ahmed.webp',
     social: {
-      email: 'ahmed@zhive249.com'
+      email: 'ahmed.ibrahim@zhive249.com'
     }
   },
   {
     name: 'Shams El-din',
     role: 'Creative Director',
     bio: 'Our creative mastermind who brings ideas to life! Shams\'s designs are not just visually stunning but tell compelling stories.',
-    image: '/team/Shams.webp',
+    image: '/optimized/Shams.webp',
     social: {
       email: ''
       }
@@ -78,7 +78,7 @@ const contributingTeam = [
     name: 'Osama',
     role: 'Corporate Account Manager',
     bio: 'Sarah brings fresh perspectives and innovative content strategies to our projects.',
-    image: '/team/joe.jpeg',
+    image: '/optimized/joe.webp',
     social: {
       email: 'osama@zhive249.com'
     }
@@ -194,7 +194,7 @@ const values = [
     </section>
 
     <!-- Contributing Assets Section -->
-    <section class="py-24 bg-navy-900 relative overflow-hidden">
+    <!-- <section class="py-24 bg-navy-900 relative overflow-hidden">
       <div class="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
       <Container>
         <div class="mx-auto max-w-2xl text-center mb-16">
@@ -203,7 +203,7 @@ const values = [
         </div>
         <ContributingAssets contributors={contributingTeam} />
       </Container>
-    </section>
+    </section> -->
 
     <!-- Values Section with Hover Effects -->
     <section class="py-24 relative overflow-hidden">
@@ -276,9 +276,33 @@ const values = [
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCTR5L70NZ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+window.dataLayer = window.dataLayer || [];
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+window.dataLayer = window.dataLayer || [];
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+window.dataLayer = window.dataLayer || [];
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+window.dataLayer = window.dataLayer || [];
+function gtag(){ window.dataLayer.push(arguments); }
+gtag('js'); // Call with one argument
+gtag('config', 'G-WCTR5L70NZ'); // Call with two arguments
 
   gtag('config', 'G-WCTR5L70NZ');
 </script>
