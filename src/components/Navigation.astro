@@ -34,13 +34,13 @@ const pathname = new URL(Astro.request.url).pathname;
 <nav class="fixed w-full z-50 top-0 start-0 bg-navy-900/90 backdrop-blur-xl border-b border-navy-300/10" aria-label="Main navigation">
   <Container>
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse" aria-label="Go to homepage">
-        <img src="/images/Logo.svg" class="h-8" alt="Zhive Logo" />
-        <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-accent-500">
-          Zhive
-          <span class="text-primary-500">249</span>
-        </span>
-      </a>
+        <!-- Logo -->
+        <a href="/" class="flex items-center space-x-2 group">
+          <img src="/images/Logo.svg" alt="Zhive249 Logo" class="w-8 h-8 transition-transform duration-300 group-hover:scale-110" />
+          <span class="text-2xl font-bold text-navy-800 dark:text-white group-hover:text-primary-500 transition-colors duration-300">
+            Zhive<span class="text-primary-500 group-hover:text-navy-800 dark:group-hover:text-white transition-colors duration-300">249</span>
+          </span>
+        </a>
 
       <!-- Mobile menu button -->
       <button
